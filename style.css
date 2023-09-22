@@ -1,0 +1,165 @@
+/* Styles for the header */
+*{
+margin: 0;
+padding: 0;
+}
+header {
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+    /* height: auto; */
+    
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.form-inline {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px;
+}
+
+
+.card-img-top{
+    /* max-width: 500px; */
+    max-width:200px;
+    max-height: 250px;
+    margin-left: 80px;
+}
+.recent-articles {
+    background-color: #f7f7f7; /* Background color for the section */
+    padding: 20px; /* Add padding for spacing */
+    min-height: 400px; /* Set a fixed minimum height for the flex container */
+    overflow-y: auto; /* Add vertical scroll if content exceeds the fixed height */
+}
+
+/* Ensure the flex container grows to accommodate content */
+.row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#timi{
+        height:500px;
+        width: 500px;
+}
+
+#iphone{
+        margin-bottom: 40px;
+}
+
+
+/* Custom styles for the individual article page */
+.article {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.article-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.article-author {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    line-height: 1.6;
+}
+
+/* Comment section styles */
+.comments {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-width: 10px;
+    border-radius: 5px;
+}
+
+.comment-author {
+    color: #555;
+    font-weight: bold;
+}
+
+.comment-text {
+    color: #333;
+}
+#elon{
+    height:200px;
+    width: 150px;
+    margin-right: 20px;
+    float: left;
+}
+
+.footer{
+    background-color:whitesmoke;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+}
+
+
+
+.hero {
+    position: relative; /* Required for z-index */
+}
+
+.hero img {
+    opacity: 0.9; /* Adjust opacity as needed (0.0 to 1.0) */
+    width: 100%;
+    height:70vh;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px; /* Move it off-screen to the left initially */
+    width: 250px; /* Set the width of the sidebar */
+    height: 100%; /* Make it cover the full height of the viewport */
+    background-color: #f7f7f7; /* Sidebar background color */
+    transition: left 0.3s; /* Add smooth transition when toggling */
+    z-index: 1; /* Ensure the sidebar is above the content */
+    cursor: pointer;
+}
+
+.sidebar.show {
+    
+    left: 0; /* Bring it back to the screen when it's shown */
+}
+
+.sidebar-toggle {
+    /* position: absolute; */
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 24px;
+    z-index: 1; 
+}
+
+.imgcat{
+    max-width: 200px;
+    max-height:150px;
+}
